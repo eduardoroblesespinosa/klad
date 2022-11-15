@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8 />
+<title>Klad Design Syndicate</title>
+<meta name=title content="Klad Design Syndicate">
+<meta name=description content="We are an multidisciplinary design syndicate providing comprehensive long-lasting solutions for people. We help inspire, envision, create, launch, support and reimagine.">
+<meta name=keywords content="klad, design, syndicate, klad design">
+<link rel=canonical href="https://klad.design">
+<meta name=robots content="index, follow">
+<meta property=og:title content="Klad Design Syndicate">
+<meta property=og:description content="We are an interdimensional design syndicate providing comprehensive long-lasting solutions for people. We help inspire, envision, create, launch, support and reimagine.">
+<meta property=og:site_name content="">
+<meta property=og:url content="https://klad.design">
+<meta property=og:type content=website>
+<meta property=og:image content="https://klad.design/storage/app/media/1200x628.jpg">
+<meta property=og:image:width content=2400>
+<meta property=og:image:height content=1256>
+<meta name=twitter:description content="We are an interdimensional design syndicate providing comprehensive long-lasting solutions for people. We help inspire, envision, create, launch, support and reimagine.">
+<meta name=twitter:title content="Klad Design Syndicate">
+<meta name=twitter:image content="https://klad.design/storage/app/media/1200x628.jpg">
+<meta http-equiv=X-UA-Compatible content="IE=edge"/>
+<meta name=viewport content="width=device-width, initial-scale=1"/>
+<link rel=apple-touch-icon sizes=180x180 href="https://klad.design/themes/klad/assets/img/favicon/apple-touch-icon.png"/>
+<link rel=icon type="image/png" sizes=32x32 href="https://klad.design/themes/klad/assets/img/favicon/favicon-32x32.png"/>
+<link rel=icon type="image/png" sizes=16x16 href="https://klad.design/themes/klad/assets/img/favicon/favicon-16x16.png"/>
+<link rel=manifest href="https://klad.design/themes/klad/assets/img/favicon/site.webmanifest"/>
+<link rel=mask-icon href="https://klad.design/themes/klad/assets/img/favicon/safari-pinned-tab.svg" color="#000000"/>
+<meta name=apple-mobile-web-app-title content="Klad Design"/>
+<meta name=application-name content="Klad Design"/>
+<meta name=msapplication-TileColor content="#000000"/>
+<meta name=theme-color content="#000000"/>
+<link rel=stylesheet href="https://klad.design/themes/klad/assets/styles/main.min.css"/>
+<link href="https://unpkg.com/filepond/dist/filepond.min.css" rel=stylesheet>
+<style>.filepond--root{font-family:"Helvetica Now Display",sans-serif;font-weight:400;margin-bottom:0;font-size:inherit;contain:none}.filepond--file *{font-size:inherit!important}.filepond--drop-label{position:relative;color:#949494;height:auto;padding:16px}html.dark .filepond--drop-label{color:#fff}.filepond--root .filepond--drop-label{min-height:auto}.filepond--drop-label.filepond--drop-label label{padding:0}.filepond--root .filepond--list-scroller{margin:0}.filepond--list-scroller{position:relative;transform:none!important}.filepond--list{position:relative!important;left:0;right:0;display:flex;flex-direction:column}.filepond--item{margin:0;border-style:solid;border-color:#f3f3f3;border-width:0 5px 5px}html.dark .filepond--item{border-color:#696969}.filepond--panel-root{background-color:#f3f3f3}html.dark .filepond--panel-root{background-color:#696969}.filepond--panel-top,.filepond--panel-bottom,.filepond--panel-center{bottom:0}.filepond--panel-top,.filepond--panel-bottom{height:0;display:none}.filepond--panel-center,.filepond--panel-bottom{transform:none!important}.filepond--panel-center{height:auto!important}.filepond--file{padding:16px;border-radius:0;align-items:center}.filepond--file-info{flex-direction:row;align-items:baseline}.filepond--file-info .filepond--file-info-main{width:auto;margin-right:20px;line-height:inherit}.filepond--file-info .filepond--file-info-sub{font-size:.8em!important}.filepond--file-status{font-size:.8em;color:#949494}.filepond--file-status .filepond--file-status-sub{display:none}.filepond--file{color:#000!important}html.dark .filepond--file{color:#fff!important}.filepond--file [data-align*="right"]{right:16px}.filepond--file .filepond--progress-indicator{margin-top:0;color:#000}html.dark .filepond--file .filepond--progress-indicator{color:#fff}.filepond--file .filepond--progress-indicator[data-align*="right"]{margin-right:4px}.filepond--file-action-button{color:#000!important;background-color:rgba(0,0,0,0)!important}html.dark .filepond--file-action-button{color:#fff!important;background-color:rgba(255,255,255,0)!important}.filepond--file-action-button.filepond--file-action-button{width:32px;height:32px}.filepond--file-action-button.filepond--file-action-button svg{margin:auto}.filepond--file-action-button.filepond--file-action-button.filepond--action-revert-item-processing svg,.filepond--file-action-button.filepond--file-action-button.filepond--action-remove-item svg{width:18px;height:18px}.filepond--item-panel{background-color:#fff!important}html.dark .filepond--item-panel{background-color:#000!important}[data-filepond-item-state='processing-complete'] .filepond--action-revert-item-processing ~ .filepond--file-info .filepond--file-info-sub {opacity:1;color:#949494}[data-filepond-item-state*="error"]{border:1px solid #ea1e1e}[data-filepond-item-state*="error"] .filepond--file .filepond--file-status{color:#ea1e1e}[data-filepond-item-state*="error"] .filepond--file-action-button{color:#ea1e1e!important}</style>
+<script src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js" defer></script>
+<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script>if(localStorage.getItem("color-theme")==="dark"||(!("color-theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark");}</script>
+<style>[x-cloak]{display:none!important}</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(83233882,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/83233882" style="position:absolute; left:-9999px;" alt="" data-pagespeed-url-hash=1615927575 /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Meta Pixel Code -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','622474469093955');fbq('track','PageView');</script>
+<noscript><img height=1 width=1 style=display:none src="https://www.facebook.com/tr?id=622474469093955&ev=PageView&noscript=1" data-pagespeed-url-hash=3377701250 /></noscript>
+<!-- End Meta Pixel Code -->
+<script data-pagespeed-no-defer>(function(){function f(a,b,d){if(a.addEventListener)a.addEventListener(b,d,!1);else if(a.attachEvent)a.attachEvent("on"+b,d);else{var c=a["on"+b];a["on"+b]=function(){d.call(this);c&&c.call(this)}}};window.pagespeed=window.pagespeed||{};var g=window.pagespeed;function k(a){this.g=[];this.f=0;this.h=!1;this.j=a;this.i=null;this.l=0;this.b=!1;this.a=0}function l(a,b){var d=b.getAttribute("data-pagespeed-lazy-position");if(d)return parseInt(d,0);var d=b.offsetTop,c=b.offsetParent;c&&(d+=l(a,c));d=Math.max(d,0);b.setAttribute("data-pagespeed-lazy-position",d);return d}
+function m(a,b){var d,c,e;if(!a.b&&(0==b.offsetHeight||0==b.offsetWidth))return!1;a:if(b.currentStyle)c=b.currentStyle.position;else{if(document.defaultView&&document.defaultView.getComputedStyle&&(c=document.defaultView.getComputedStyle(b,null))){c=c.getPropertyValue("position");break a}c=b.style&&b.style.position?b.style.position:""}if("relative"==c)return!0;e=0;"number"==typeof window.pageYOffset?e=window.pageYOffset:document.body&&document.body.scrollTop?e=document.body.scrollTop:document.documentElement&&
+document.documentElement.scrollTop&&(e=document.documentElement.scrollTop);d=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;c=e;e+=d;var h=b.getBoundingClientRect();h?(e=h.top-d,c=h.bottom):(h=l(a,b),d=h+b.offsetHeight,e=h-e,c=d-c);return e<=a.f&&0<=c+a.f}
+k.prototype.m=function(a){p(a);var b=this;window.setTimeout(function(){var d=a.getAttribute("data-pagespeed-lazy-src");if(d)if((b.h||m(b,a))&&-1!=a.src.indexOf(b.j)){var c=a.parentNode,e=a.nextSibling;c&&c.removeChild(a);a.c&&(a.getAttribute=a.c);a.removeAttribute("onload");a.tagName&&"IMG"==a.tagName&&g.CriticalImages&&f(a,"load",function(){g.CriticalImages.checkImageForCriticality(this);b.b&&(b.a--,b.a||g.CriticalImages.checkCriticalImages())});a.removeAttribute("data-pagespeed-lazy-src");a.removeAttribute("data-pagespeed-lazy-replaced-functions");
+c&&c.insertBefore(a,e);if(c=a.getAttribute("data-pagespeed-lazy-srcset"))a.srcset=c,a.removeAttribute("data-pagespeed-lazy-srcset");a.src=d}else b.g.push(a)},0)};k.prototype.loadIfVisibleAndMaybeBeacon=k.prototype.m;k.prototype.s=function(){this.h=!0;q(this)};k.prototype.loadAllImages=k.prototype.s;function q(a){var b=a.g,d=b.length;a.g=[];for(var c=0;c<d;++c)a.m(b[c])}function t(a,b){return a.a?null!=a.a(b):null!=a.getAttribute(b)}
+k.prototype.u=function(){for(var a=document.getElementsByTagName("img"),b=0,d;d=a[b];b++)t(d,"data-pagespeed-lazy-src")&&p(d)};k.prototype.overrideAttributeFunctions=k.prototype.u;function p(a){t(a,"data-pagespeed-lazy-replaced-functions")||(a.c=a.getAttribute,a.getAttribute=function(a){"src"==a.toLowerCase()&&t(this,"data-pagespeed-lazy-src")&&(a="data-pagespeed-lazy-src");return this.c(a)},a.setAttribute("data-pagespeed-lazy-replaced-functions","1"))}
+g.o=function(a,b){function d(){if(!(c.b&&a||c.i)){var b=200;200<(new Date).getTime()-c.l&&(b=0);c.i=window.setTimeout(function(){c.l=(new Date).getTime();q(c);c.i=null},b)}}var c=new k(b);g.lazyLoadImages=c;f(window,"load",function(){c.b=!0;c.h=a;c.f=200;if(g.CriticalImages){for(var b=0,d=document.getElementsByTagName("img"),r=0,n;n=d[r];r++)-1!=n.src.indexOf(c.j)&&t(n,"data-pagespeed-lazy-src")&&b++;c.a=b;c.a||g.CriticalImages.checkCriticalImages()}q(c)});b.indexOf("data")&&((new Image).src=b);f(window,
+"scroll",d);f(window,"resize",d)};g.lazyLoadInit=g.o;})();
+
+pagespeed.lazyLoadInit(true, "/pagespeed_static/1.JiBnMqyl6S.gif");
+</script></head>
+<body x-data="{ menuIsOpen: false, showreelIsOpen: false }" @open-menu.window="menuIsOpen = $event.detail" @open-showreel.window="showreelIsOpen = $event.detail" :class="showreelIsOpen && 'overflow-hidden'" class=body><noscript><meta HTTP-EQUIV="refresh" content="0;url='http://klad.design/?PageSpeed=noscript'" /><style><!--table,div,span,font,p{display:none} --></style><div style="display:block">Please click <a href="http://klad.design/?PageSpeed=noscript">here</a> if you are not redirected within a few seconds.</div></noscript>
+<div x-init="$el.classList.add('is-not-loading'); setTimeout(() => { $el.classList.remove('is-loading', 'is-not-loading') }, 1000)" class="wrapper is-loading">
+<div class=cursor>
+<svg class="cursor-item cursor-pointer" style="transform: translate(-50%, -50%)" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#cursor"></use>
+</svg>
+<svg class="cursor-item cursor-follow" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#cursor"></use>
+</svg>
+<svg class="cursor-item cursor-follow" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#cursor"></use>
+</svg>
+</div>
+<header id=header class="is-sticky header sticky top-0 z-40 bg-white px-10px transition dark:bg-black md:px-20px" x-data="{ isScrolled: false, openMenu: false, openShowreel: false }" x-init="isScrolled = $el.classList.contains('is-sticky') ? window.scrollY >= 114 : true; $watch('openMenu', () => $dispatch('open-menu', openMenu)); $watch('openShowreel', () => $dispatch('open-showreel', openShowreel))" @scroll.window="if($el.classList.contains('is-sticky')){ isScrolled = (window.scrollY >= 114) }" @keydown.escape="openShowreel = false">
+<div class="flex flex-wrap md:grid md:grid-cols-[auto_1fr_auto] lg:grid-cols-[auto_1fr_1fr_1fr_220px_220px] xl:grid-cols-[auto_1fr_1fr_1fr_310px_310px]">
+<div :class="isScrolled && 'md:!w-[77px] lg:!w-[97px] xl:!w-[116px] !border-r'" class="order-first row-span-2 flex w-[59px] origin-left items-center border-r border-black transition-all dark:border-white md:w-0 md:border-r-0 md:border-b">
+<a href="/" class="w-full p-10px pl-0 md:pr-16px lg:pr-20px">
+<span id=logo class=w-full data-animation-path="https://klad.design/themes/klad/assets/files/klad.json">
+<script data-pagespeed-no-defer>(function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();pagespeed.CriticalImages.Run('/ngx_pagespeed_beacon','http://klad.design/','q9VWSmxD3J',false,false,'Vtw_R82Eg8s');</script><img class="w-full dark:invert" data-pagespeed-lazy-src="https://klad.design/themes/klad/assets/img/logo-klad.svg" alt="Klad Syndicate logotype" data-pagespeed-url-hash=2918459560 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</span>
+</a>
+</div>
+<div class="hidden flex-col items-start justify-center gap-6px border-l border-black px-16px text-h3_lg font-medium uppercase dark:border-white lg:col-span-1 lg:flex xl:text-h3_xl">
+<a class=hover:text-grey href="https://klad.design/about.txt" target=_blank>About.txt</a>
+<a class=hover:text-grey href="https://klad.design/projects">Projects</a>
+</div>
+<div class="flex flex-1 flex-wrap content-center gap-x-4px border-black px-8px dark:border-white md:flex-initial md:border-l md:pr-0 lg:col-span-1 lg:gap-x-12px lg:gap-y-2px lg:px-16px">
+<a class="hidden text-h3_lg font-medium uppercase hover:text-grey lg:block xl:text-h3_xl" href="https://klad.design/express">
+Express design
+</a>
+<div class="hidden w-full lg:block"></div>
+<button @click="openShowreel = true" class="group p-6px lg:p-0" aria-label="Open showreel" type=button>
+<svg class="h-24px w-24px" viewBox="0 0 24 24" fill=none xmlns="http://www.w3.org/2000/svg">
+<circle cx=12 cy=12 r=12 class="fill-black dark:fill-white"/>
+<path d="M18 12L8.25 18.0622L8.25 5.93782L18 12Z" class="fill-white dark:fill-black"/>
+</svg>
+</button>
+<button data-toggle-theme class="group p-6px lg:p-0" aria-label="Toggle dark mode" type=button>
+<svg class="h-24px w-24px" viewBox="0 0 24 24" fill=none xmlns="http://www.w3.org/2000/svg">
+<path fill-rule=evenodd clip-rule=evenodd d="M17 1.08809C12.8689 2.9841 10 7.15701 10 12C10 16.843 12.8689 21.0159 17 22.9119C15.4779 23.6105 13.7844 24 12 24C5.37258 24 4.69686e-07 18.6274 1.04907e-06 12C1.62846e-06 5.37258 5.37258 -1.0165e-06 12 -4.37114e-07C13.7844 -2.81114e-07 15.4779 0.389486 17 1.08809Z" class="fill-black dark:fill-transparent"/>
+<path fill-rule=evenodd clip-rule=evenodd d="M7 22.9119C11.1311 21.0159 14 16.843 14 12C14 7.15701 11.1311 2.9841 7 1.08809C8.52211 0.389487 10.2156 -1.20507e-06 12 -1.04907e-06C18.6274 -4.69686e-07 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C10.2156 24 8.52211 23.6105 7 22.9119Z" class=dark:fill-white />
+<circle cx=12 cy=12 r=11.5 class="stroke-black dark:stroke-white"/>
+</svg>
+</button>
+<button @click="openMenu = !openMenu;" x-text="openMenu ? 'Close' : 'Menu'" class="ml-auto min-w-[56px] p-6px text-h3 uppercase md:ml-auto md:p-0 md:text-h3_md lg:hidden" aria-label="Toggle menu" type=button></button>
+</div>
+<div class="relative order-last col-span-full w-full border-t border-t-black dark:border-t-white md:border-t-0 lg:!hidden">
+<nav x-show=openMenu x-collapse.duration.500ms @click.outside="openMenu = false" style="display: none" class="absolute inset-x-0 z-10 border border-t-0 border-black bg-white text-h2_md font-bold uppercase dark:border-white dark:bg-black md:text-h2_xl">
+<ul class="flex flex-col space-y-24px py-40px px-10px md:px-20px">
+<li>
+<a class=hover:text-grey href="https://klad.design/about.txt">About.txt</a>
+</li>
+<li>
+<a class=hover:text-grey href="https://klad.design/projects">Projects</a>
+</li>
+<li>
+<a class=hover:text-grey href="https://klad.design/express">Express design</a>
+</li>
+<li>
+<a class=hover:text-grey href="mailto:info@klad.design?subject=New project with Klad studio">
+Work with us
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<div :class="isScrolled && 'md:pl-16px'" class="hidden w-full flex-none pt-24px md:order-first md:block md:overflow-hidden md:whitespace-nowrap md:py-12px md:pr-16px lg:col-span-3">
+<h1 class="slide-text text-h1 font-bold lg:text-h1_lg xl:text-h1_xl" data-slide-text>
+<span>Making your competitors jealous</span>
+<span>Giving your ideas the right shape</span>
+</h1>
+</div>
+<div :class="isScrolled && 'md:pl-16px'" class="hidden w-full flex-none overflow-hidden border-black py-14px dark:border-white md:col-span-2 md:block md:flex md:items-center md:border-y md:py-2px md:pr-16px lg:col-span-5">
+<svg :class="isScrolled && 'hidden'" class="h-14px w-14px flex-initial fill-current md:mr-12px lg:h-16px lg:w-16px xl:h-18px xl:w-18px" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#cross"></use>
+</svg>
+<h2 class="slide-text text-p2 font-normal md:text-p2_md lg:text-p2_lg xl:text-p2_xl" data-slide-text>
+<span>We create professional design for memorable customer experience</span>
+<span>Helping you present ideas in the most effective way</span>
+<span>Become a wolf, stop being a sheep</span>
+</h2>
+</div>
+</div>
+<div class="fixed top-0 bottom-0 left-0 z-50 flex w-full overflow-auto p-10px backdrop-blur-sm md:p-20px" x-show=openShowreel x-transition x-cloak>
+<button @click="openShowreel = false" class="absolute top-24px right-24px" type=button aria-label="Remove file">
+<svg class="h-24px w-24px fill-current transition group-hover:fill-red" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#close"></use>
+</svg>
+</button>
+<iframe x-ref=showreelIframe class=w-full @click.away="openShowreel = false" :src="openShowreel && 'https://player.vimeo.com/video/723160654?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0'" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</div>
+</header>
+<div :class="menuIsOpen && 'blur-sm'" class="flex h-[calc(var(--vh,_100vh)_-_var(--header,_300px))] min-h-[320px] px-10px pb-10px pt-20px transition-all md:h-[calc(var(--vh,_100vh)_-_var(--header,_300px))] md:min-h-[600px] md:px-20px md:pt-0 md:pb-20px">
+<div class="relative flex-grow border border-black dark:border-white md:border-t-0">
+<video id=canvasVideo class=hidden data-path="https://klad.design/themes/klad/assets/files/logo-klad" autoplay playsinline loop muted></video>
+<div id=canvasLoader class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 dark:invert" role=status>
+<img width=24 height=24 src="https://klad.design/themes/klad/assets/img/loader.svg" alt="Loader icon" data-pagespeed-url-hash=3932898061 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+<div class="flex h-full w-full opacity-0 transition-opacity duration-500">
+<canvas id=heroCanvas class="h-full w-full mix-blend-darken transition-all dark:mix-blend-lighten dark:invert"></canvas>
+</div>
+<a href="https://calendly.com/klad-design/discovery" target=_blank class="btn absolute bottom-0 left-0 right-0 border-b-0 border-l-0 border-r-0 bg-white dark:bg-black md:right-auto md:border-r">
+Get in touch
+</a>
+</div>
+</div>
+<section id=about class="relative grid-cols-6 gap-x-20px overflow-hidden px-10px pt-60px md:grid md:px-20px md:pt-80px lg:overflow-visible">
+<div id=aboutWave class="absolute bottom-[45px] -right-[33px] -z-10 h-[391px] w-[362px] dark:block md:bottom-[32px] md:-right-24px lg:-bottom-[170px] lg:-right-[calc(-50%_+_282px)] lg:h-[609px] lg:w-[564px] xl:-bottom-[160px] xl:-right-[calc(-50%_+_410px)] xl:h-[646px] xl:w-[600px]" data-animation-path="https://klad.design/themes/klad/assets/files/wave.json" data-animation-path-dark="https://klad.design/themes/klad/assets/files/wave-dark.json"></div>
+<div class="col-span-5 md:pr-60px lg:pr-0">
+<h2 class="h1 block">
+We help
+<div class="slide-text inline-block" data-slide-text=x data-slide-duration=0.4 data-slide-delay=2 data-slide-lottie=aboutBarcode>
+<span>inspire</span>
+<span>envision</span>
+<span>create</span>
+<span>launch</span>
+<span>support</span>
+<span>reimagine</span>
+</div>
+</h2>
+<div class="p1 mt-24px lg:mt-40px">
+<p>Klad is a <span lang=en>multidisciplinary</span> design syndicate that provides comprehensive long-lasting solutions for people. Every design we deliver is original, and every project is treated uniquely. We treat our clients as long-term partners. We do not work to indulge but to help them achieve new heights in everything they do.</p>
+</div>
+</div>
+<div class="col-span-full mt-[200px] flex flex-col items-stretch gap-24px md:mt-60px md:flex-row-reverse md:items-end md:gap-0 lg:mt-80px xl:mt-60px">
+<a href="https://klad.design/storage/app/uploads/public/62b/f98/6bb/62bf986bb5423462444178.pdf" target=_blank class="btn h2 flex-shrink-0">Download portfolio</a>
+<div class="flex-grow md:border-b md:border-black md:pr-24 dark:md:border-white">
+<div id=aboutBarcode class="h-12px w-full dark:invert md:w-[187px] lg:w-[524px]" data-animation-path="https://klad.design/themes/klad/assets/files/barcode.json"></div>
+</div>
+</div>
+</section>
+<section class="relative mt-60px grid-cols-6 gap-x-20px px-10px md:mt-80px md:grid md:px-20px">
+<div class="col-span-5 md:pr-60px lg:pr-0">
+<h2 class=h1>Projects</h2>
+<div class="p1 mt-24px lg:mt-40px">
+<p>Years of experience to create unique design in agile and fast manner</p> </div>
+</div>
+<div class="col-span-full mt-40px md:mt-60px">
+<div class="grid grid-cols-6 gap-x-20px gap-y-24px lg:gap-y-40px">
+<a href="https://klad.design/projects/case/1sec" class="col-span-full flex flex-col border border-black dark:border-white lg:col-span-3">
+<div class="flex-shrink-0 md:flex">
+<div class="flex flex-shrink-0 items-center p-16px md:py-24px">
+<h3 class="h3 uppercase">1SEC Launch</h3>
+</div>
+<div class="flex flex-grow items-center border-t border-black p-16px dark:border-white md:border-t-0 md:border-l md:py-0">
+<p class=p2>
+Express naming, core branding and product design for the company launch
+</p>
+</div>
+</div>
+<div class="relative flex-grow overflow-hidden border-t border-black dark:border-white" data-switch-images=500>
+<picture class="">
+<img style="visibility: visible" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-1sec/xcase-preview-img,P201.jpg.pagespeed.ic.ZThPVp8hts.webp" loading=lazy alt="1SEC Launch" data-pagespeed-url-hash=3086933478 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-1sec/xcase-preview-img,P202,P20copy.jpg.pagespeed.ic.LMnk2429q5.webp" loading=lazy alt="1SEC Launch" data-pagespeed-url-hash=3257226323 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-1sec/xcase-preview-img,P203.jpg.pagespeed.ic.BNyrl6xOv4.webp" loading=lazy alt="1SEC Launch" data-pagespeed-url-hash=3675933320 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-1sec/xcase-preview-img,P204.jpg.pagespeed.ic.qFq_MPtZl5.webp" loading=lazy alt="1SEC Launch" data-pagespeed-url-hash=3970433241 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-1sec/xcase-preview-img,P205.jpg.pagespeed.ic.6wU3x2v3B4.webp" loading=lazy alt="1SEC Launch" data-pagespeed-url-hash=4264933162 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+</div>
+<div class="flex flex-shrink-0 flex-col gap-y-8px border-t border-black p-16px dark:border-white md:flex-row">
+<div class="h3 flex-shrink-0 uppercase md:w-[164px] xl:w-[205px]">Work scope //</div>
+<p class=p2>
+Brand identity,
+Motion design,
+3D modelling
+</p>
+</div>
+<div class="flex flex-shrink-0 flex-col gap-y-8px border-t border-black p-16px dark:border-white md:flex-row">
+<div class="h3 flex-shrink-0 uppercase md:w-[164px] xl:w-[205px]">Tools Used //</div>
+<p class=p2>Adobe Illustrator, Figma, Blender, AfterEffects</p>
+</div>
+</a>
+<a href="https://klad.design/projects/case/miestilo" class="col-span-full flex flex-col border border-black dark:border-white lg:col-span-3">
+<div class="flex-shrink-0 md:flex">
+<div class="flex flex-shrink-0 items-center p-16px md:py-24px">
+<h3 class="h3 uppercase">Miestilo Jewelry Branding</h3>
+</div>
+<div class="flex flex-grow items-center border-t border-black p-16px dark:border-white md:border-t-0 md:border-l md:py-0">
+<p class=p2>
+Dynamic branding, web and motion design for the jewellery manufacturer
+</p>
+</div>
+</div>
+<div class="relative flex-grow overflow-hidden border-t border-black dark:border-white" data-switch-images=500>
+<picture class="">
+<img style="visibility: visible" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-miestilo/xcase-preview-img,P202.jpg.pagespeed.ic.NraFL1PNF_.webp" loading=lazy alt="Miestilo Jewelry Branding" data-pagespeed-url-hash=2578172837 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-miestilo/xcase-preview-img,P201.jpg.pagespeed.ic.oepUY8j5gb.webp" loading=lazy alt="Miestilo Jewelry Branding" data-pagespeed-url-hash=2283672916 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-miestilo/xcase-preview-img,P203.jpg.pagespeed.ic.VgAvBnsToF.webp" loading=lazy alt="Miestilo Jewelry Branding" data-pagespeed-url-hash=2872672758 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-miestilo/xcase-preview-img,P204.jpg.pagespeed.ic.sJmKCy-dxp.webp" loading=lazy alt="Miestilo Jewelry Branding" data-pagespeed-url-hash=3167172679 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-miestilo/xcase-preview-img,P205.jpg.pagespeed.ic.fhhr4Tpjd3.webp" loading=lazy alt="Miestilo Jewelry Branding" data-pagespeed-url-hash=3461672600 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+</div>
+<div class="flex flex-shrink-0 flex-col gap-y-8px border-t border-black p-16px dark:border-white md:flex-row">
+<div class="h3 flex-shrink-0 uppercase md:w-[164px] xl:w-[205px]">Work scope //</div>
+<p class=p2>
+Brand strategy,
+Brand identity,
+Web-design,
+Motion design
+</p>
+</div>
+<div class="flex flex-shrink-0 flex-col gap-y-8px border-t border-black p-16px dark:border-white md:flex-row">
+<div class="h3 flex-shrink-0 uppercase md:w-[164px] xl:w-[205px]">Tools Used //</div>
+<p class=p2>Figma, Blender, AfterEffects, Three.js, Laravel</p>
+</div>
+</a>
+<a href="https://klad.design/projects/case/ubc" class="col-span-full flex flex-col border border-black dark:border-white lg:col-span-3">
+<div class="flex-shrink-0 md:flex">
+<div class="flex flex-shrink-0 items-center p-16px md:py-24px">
+<h3 class="h3 uppercase">UBC Website</h3>
+</div>
+<div class="flex flex-grow items-center border-t border-black p-16px dark:border-white md:border-t-0 md:border-l md:py-0">
+<p class=p2>
+Express core website design and development with unconventional layout for a biotech company
+</p>
+</div>
+</div>
+<div class="relative flex-grow overflow-hidden border-t border-black dark:border-white" data-switch-images=500>
+<picture class="">
+<img style="visibility: visible" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-ubc/xcase-preview-img-1.jpg.pagespeed.ic.55KyB1Ud2U.webp" loading=lazy alt="UBC Website" data-pagespeed-url-hash=1791388624 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-ubc/xcase-preview-img,P202.jpg.pagespeed.ic.rkBYZxVCgI.webp" loading=lazy alt="UBC Website" data-pagespeed-url-hash=3219622875 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-ubc/xcase-preview-img,P203.jpg.pagespeed.ic.hfXVFX4gq-.webp" loading=lazy alt="UBC Website" data-pagespeed-url-hash=3514122796 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-ubc/xcase-preview-img,P205.jpg.pagespeed.ic.ofJv7fEI-j.webp" loading=lazy alt="UBC Website" data-pagespeed-url-hash=4103122638 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-ubc/xcase-preview-img-4.jpg.pagespeed.ic.EabqUP0dMk.webp" loading=lazy alt="UBC Website" data-pagespeed-url-hash=2674888387 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+</div>
+<div class="flex flex-shrink-0 flex-col gap-y-8px border-t border-black p-16px dark:border-white md:flex-row">
+<div class="h3 flex-shrink-0 uppercase md:w-[164px] xl:w-[205px]">Work scope //</div>
+<p class=p2>
+Web-development,
+Web-design,
+3D modelling
+</p>
+</div>
+<div class="flex flex-shrink-0 flex-col gap-y-8px border-t border-black p-16px dark:border-white md:flex-row">
+<div class="h3 flex-shrink-0 uppercase md:w-[164px] xl:w-[205px]">Tools Used //</div>
+<p class=p2>Figma, Blender, HTML, CSS, Tailwind</p>
+</div>
+</a>
+<a href="https://klad.design/projects/case/viola" class="col-span-full flex flex-col border border-black dark:border-white lg:col-span-3">
+<div class="flex-shrink-0 md:flex">
+<div class="flex flex-shrink-0 items-center p-16px md:py-24px">
+<h3 class="h3 uppercase">Viola Web Redesign</h3>
+</div>
+<div class="flex flex-grow items-center border-t border-black p-16px dark:border-white md:border-t-0 md:border-l md:py-0">
+<p class=p2>
+Website redesign with custom illustrations for the international English school
+</p>
+</div>
+</div>
+<div class="relative flex-grow overflow-hidden border-t border-black dark:border-white" data-switch-images=500>
+<picture class="">
+<img style="visibility: visible" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-viola/xcase-preview-img,P201.jpg.pagespeed.ic.udRnOC2eWl.webp" loading=lazy alt="Viola Web Redesign" data-pagespeed-url-hash=1554420911 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-viola/xcase-preview-img,P202.jpg.pagespeed.ic.Z1mF0VFEJE.webp" loading=lazy alt="Viola Web Redesign" data-pagespeed-url-hash=1848920832 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-viola/xcase-preview-img,P203.jpg.pagespeed.ic.WpiJbde-L4.webp" loading=lazy alt="Viola Web Redesign" data-pagespeed-url-hash=2143420753 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-viola/xcase-preview-img,P204.jpg.pagespeed.ic.vYP0-ji3MR.webp" loading=lazy alt="Viola Web Redesign" data-pagespeed-url-hash=2437920674 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+<picture class="absolute top-0 left-0 h-full w-full">
+<img style="visibility: hidden" class="h-full w-full object-cover" data-pagespeed-lazy-src="https://klad.design/storage/app/media/project-viola/xcase-preview-img,P205.jpg.pagespeed.ic.Q6foQ4kScI.webp" loading=lazy alt="Viola Web Redesign" data-pagespeed-url-hash=2732420595 src="/pagespeed_static/1.JiBnMqyl6S.gif" onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"/>
+</picture>
+</div>
+<div class="flex flex-shrink-0 flex-col gap-y-8px border-t border-black p-16px dark:border-white md:flex-row">
+<div class="h3 flex-shrink-0 uppercase md:w-[164px] xl:w-[205px]">Work scope //</div>
+<p class=p2>
+Web-development,
+Web-design,
+Motion design
+</p>
+</div>
+<div class="flex flex-shrink-0 flex-col gap-y-8px border-t border-black p-16px dark:border-white md:flex-row">
+<div class="h3 flex-shrink-0 uppercase md:w-[164px] xl:w-[205px]">Tools Used //</div>
+<p class=p2>Figma, Illustrator, AfterEffects, HTML, CSS</p>
+</div>
+</a>
+</div>
+<a href="https://klad.design/projects" class="btn mt-40px w-full">View all</a>
+</div>
+</section>
+<section id=form x-data="{ showExpress: true, scroll() { setTimeout(() => { $el.scrollIntoView({ behavior: 'smooth' }) }, 300) } }" x-init="$watch('showExpress', () => $dispatch('change-express', showExpress))" class="mt-60px px-10px md:mt-80px md:px-20px">
+<div class="relative flex flex-col border-t border-black dark:border-white lg:flex-row lg:gap-20px">
+<div :class="!showExpress ? 'lg:!left-0 lg:!translate-x-0' : 'lg:left-full lg:-translate-x-full'" class="sticky top-0 bottom-0 z-10 flex bg-white transition-all dark:bg-black lg:absolute lg:left-full lg:w-[calc((100%_-_100px)_/_6)] lg:shrink-0 lg:-translate-x-full lg:duration-500">
+<div :class="showExpress ? 'lg:ml-auto lg:mr-[22px] xl:mr-40px' : 'lg:!mr-auto lg:!ml-[22px] xl:!ml-[35px]'" class="w-full lg:ml-auto lg:mr-[22px] lg:flex lg:h-auto lg:w-auto lg:flex-col-reverse lg:[writing-mode:vertical-lr] xl:mr-40px">
+<a href="#" @click.prevent="showExpress = false; scroll()" :class="!showExpress || 'text-grey before:border-t-grey after:border-r-grey'" class="btn w-full border-x-0 border-t-0 py-20px px-0 lg:border-y-0 lg:border-l lg:p-24px lg:before:mr-0 lg:before:mb-14px lg:after:ml-0 lg:after:mt-14px" type=button>
+Custom design
+</a>
+<a href="#" @click.prevent="showExpress = true; scroll()" :class="showExpress || 'text-grey before:border-t-grey after:border-r-grey'" class="btn w-full border-0 py-20px px-0 lg:p-24px lg:before:mr-0 lg:before:mb-14px lg:after:ml-0 lg:after:mt-14px" type=button>
+Express design
+</a>
+</div>
+</div>
+<div x-show="!showExpress" :class="!showExpress ? 'lg:!max-w-full' : 'lg:max-w-0'" class="order-first overflow-hidden md:-mx-20px md:px-20px lg:absolute lg:top-0 lg:right-0 lg:z-[1] lg:mx-0 lg:!block lg:!h-full lg:w-full lg:max-w-0 lg:bg-white lg:px-0 lg:!transition-all lg:!duration-500 dark:lg:bg-black" x-cloak x-collapse>
+<div class="relative flex min-h-[620px] flex-col items-center justify-center py-80px text-center md:min-h-[808px] md:items-start lg:absolute lg:top-0 lg:right-0 lg:min-h-full lg:w-[calc((100vw_-_140px)_/_6_*_5_+_80px)]">
+<h2 class=h1>Work with us</h2>
+<div class="p1 mt-24px mb-[65px] flex flex-col items-center md:mb-20px md:flex-row md:flex-wrap lg:mt-40px">
+<span>We are always ready to</span>
+<a href="https://calendly.com/klad-design/discovery" target=_blank class="btn-skew my-6px md:my-0 md:mx-10px xl:mx-20px" data-text="discuss the details">
+<span>discuss the details</span>
+</a>
+<span>of your new project.</span>
+</div>
+<video id=formTwist class="pointer-events-none absolute bottom-0 left-[calc(50%_-_181px)] -z-[1] h-[388px] w-[362px] mix-blend-darken transition-all dark:block dark:mix-blend-lighten md:left-[calc(50%_-_70px)] md:bottom-[calc(50%_-_290px)] md:h-[548px] md:w-[512px] lg:bottom-[calc(50%_-_305px)] lg:left-[calc(50%_-_195px)] lg:h-[665px] lg:w-[622px] xl:bottom-[calc(50%_-_350px)] xl:left-[calc(50%_-_175px)] xl:h-[704px] xl:w-[658px]" data-path="https://klad.design/themes/klad/assets/files/twist-1316" data-path-dark="https://klad.design/themes/klad/assets/files/twist-dark-1316" autoplay playsinline loop muted></video>
+</div>
+</div>
+<div x-show=showExpress class="lg:!block lg:!h-auto lg:w-[calc((100%_-_100px)_/_6_*_5_+_80px)] lg:!overflow-visible" x-collapse>
+<div class="gap-20px pt-40px pb-60px lg:grid lg:grid-cols-5 lg:py-80px">
+<div class="col-span-5 lg:col-span-full">
+<div class="flex flex-col items-start gap-24px md:flex-row md:items-baseline md:gap-40px">
+<h2 class=h1><p>Make it fast!</p></h2>
+<a href="https://klad.design/instructions_and_conditions.txt" target=_blank class="p2 afterline">
+instructions_and_conditions.txt
+</a>
+</div>
+<div class="p1 mt-24px lg:mt-40px">
+<p>Express design is a faster and cheaper alternative to full-scale projects with one simple rule: no edits or comments. This way, we can cut out all the project management and focus just on the design processes. Fast execution without any quality compromises.</p> </div>
+</div>
+<div x-data="{ selected: null, ...window.utils }" @change-express.window="$event.detail ? '' : selected = null" class="col-span-full mt-40px">
+<div x-data="{ formSubmitted: false, showReset: false, price: 395, days: 4, receiveNaming: false, receiveBranding: false }" @reset="showReset = false; price = 395; days = 4; receiveNaming = false; receiveBranding = false" class="gap-20px transition-opacity lg:grid lg:grid-cols-5" :class="(selected !== null && selected !== 1) && 'opacity-40'">
+<div class="border-t border-black dark:border-white lg:col-span-4">
+<button @click="if(selected !== 1) { selected = 1; scrollToSection($el, 0.3) } else { selected = null }" class="flex w-full scroll-mt-[126px] items-center justify-between gap-8px py-16px lg:scroll-mt-0" type=button>
+<span class="p1 text-left">Logo</span>
+<span class="p2 whitespace-nowrap text-right">
+395 EUR &nbsp;&nbsp;//
+<br class=md:hidden />
+&nbsp;&nbsp; 4 working days
+</span>
+</button>
+<form class=form @change="showReset = true" x-ref=form1 x-show="selected === 1" autocomplete=off x-cloak x-collapse>
+<input name=_session_key type=hidden value=Xe7fk4OjJfmKOtjpl87kYXnIZCNDWT9q8aytIAse>
+<input name=_token type=hidden value=Il1wIwrnVXfGwY7iKVMTfMNMmyNZln2lAA3j6JvM>
+<input type=hidden name=Category value=Logo />
+<div x-show="!formSubmitted" class="mt-24px grid grid-cols-1 gap-x-20px gap-y-24px lg:grid-cols-2">
+<div x-id="['form1-input']" class=float-field>
+<input :id="$id('form1-input')" class=field type=text name=Name placeholder=Name required />
+<label :for="$id('form1-input')">Name</label>
+</div>
+<div x-id="['form1-input']" class=float-field>
+<input :id="$id('form1-input')" class=field type=email name=Email placeholder=Email required />
+<label :for="$id('form1-input')">Email</label>
+</div>
+<div x-id="['form1-input']" class=float-field>
+<input :id="$id('form1-input')" x-ref=logoBrand class=field type=text placeholder="Brand name" name="Brand name" :required="!receiveNaming" :disabled=receiveNaming />
+<label :for="$id('form1-input')">Brand name</label>
+</div>
+<div x-id="['form1-input']" class=float-field>
+<input :id="$id('form1-input')" class=field type=text placeholder="Brand description" name="Brand description" required />
+<label :for="$id('form1-input')">Brand description</label>
+</div>
+<div x-id="['form1-input']" class="float-field col-span-full">
+<textarea :id="$id('form1-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Target audience" name="Describe your target audience" rows=1></textarea>
+<label :for="$id('form1-input')">Describe your target audience</label>
+</div>
+<div x-id="['form1-input']" class="float-field col-span-full">
+<textarea :id="$id('form1-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Any extra preferences?" name="Any extra preferences that we should consider?" rows=1></textarea>
+<label :for="$id('form1-input')">Any extra preferences that we should consider?</label>
+</div>
+<div class="p2 col-span-full">
+<input type=file name=files multiple>
+</div>
+</div>
+<div x-show="!formSubmitted" class="mt-40px flex flex-col gap-24px">
+<div x-id="['form1-input']" class="flex gap-20px">
+<input :id="$id('form1-input')" x-model=receiveNaming @change="price += receiveNaming ? +300 : -300; days += receiveNaming ? +4 : -4; $refs.logoBrand.classList.remove('error'); $refs.logoBrand.value = ''" name="Add brand naming" type=checkbox value=yes />
+<label :for="$id('form1-input')">Add brand naming (+300 EUR // +4 days)</label>
+</div>
+<div x-id="['form1-input']" class="flex gap-20px">
+<input :id="$id('form1-input')" x-model=receiveBranding @change="price += receiveBranding ? +600 : -600; days += receiveBranding ? +4 : -4" name="Upgrade to Core Branding" type=checkbox value=yes />
+<label :for="$id('form1-input')">
+Upgrade to Core Branding (+600 EUR // +4 days)
+<span class="mt-8px block">
+Selection of brand color, fonts and providing examples of how to use branding
+</span>
+</label>
+</div>
+</div>
+<div class="mt-40px flex flex-col gap-16px border border-black p-14px dark:border-white">
+<p class=p2>
+You will receive: Logo in .ai, .svg, .png formats
+<span x-show=receiveNaming x-cloak>+ Brand naming with website domain suggestion</span>
+<span x-show=receiveBranding x-cloak>
++ PDF presentation with colors, suggested fonts (and free alternative) and the example of
+how the social media profile would look like
+</span>
+</p>
+<p class=p1>
+Total:
+<span x-text=price>395</span>
+EUR &nbsp;&nbsp;//&nbsp;&nbsp;
+<br class=md:hidden />
+<span x-text=days>4</span>
+working days
+</p>
+<input type=hidden name=Total :value=price />
+<input type=hidden name=Days :value=days />
+</div>
+<div x-show=formSubmitted class=my-40px>
+<p class=p1>Your application has been sent!</p>
+<p class="p2 mt-24px">Wait for an email with instructions.</p>
+</div> <button x-show="!formSubmitted" class="btn my-40px w-full" type=submit>Send request</button>
+</form>
+</div>
+<div class="hidden lg:col-span-1 lg:block">
+<button @click="$refs.form1.reset()" x-show="showReset && selected === 1" x-cloak class="p2 sticky top-0 flex w-full items-center justify-center gap-16px py-[28px]" type=button>
+Reset
+<svg class="h-24px w-24px fill-current" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#close"></use>
+</svg>
+</button>
+</div>
+</div>
+<div x-data="{ formSubmitted: false, showReset: false }" @reset="showReset = false" class="gap-20px transition-opacity lg:grid lg:grid-cols-5" :class="(selected !== null && selected !== 2) && 'opacity-40'">
+<div class="border-t border-black dark:border-white lg:col-span-4">
+<button @click="if(selected !== 2) { selected = 2; scrollToSection($el, 0.3) } else { selected = null }" class="flex w-full scroll-mt-[126px] items-center justify-between gap-8px py-16px lg:scroll-mt-0" type=button>
+<span class="p1 text-left">Brand Animation</span>
+<span class="p2 whitespace-nowrap text-right">
+995 EUR &nbsp;&nbsp;//
+<br class=md:hidden />
+&nbsp;&nbsp; 7 working days
+</span>
+</button>
+<form class=form @change="showReset = true" x-ref=form2 x-show="selected === 2" autocomplete=off x-cloak x-collapse>
+<input name=_session_key type=hidden value=Xe7fk4OjJfmKOtjpl87kYXnIZCNDWT9q8aytIAse>
+<input name=_token type=hidden value=Il1wIwrnVXfGwY7iKVMTfMNMmyNZln2lAA3j6JvM>
+<input type=hidden name=Category value="Brand Animation"/>
+<div x-show="!formSubmitted" class="mt-24px grid grid-cols-1 gap-x-20px gap-y-24px lg:grid-cols-2">
+<div x-id="['form2-input']" class=float-field>
+<input :id="$id('form2-input')" class=field type=text name=Name placeholder=Name required />
+<label :for="$id('form2-input')">Name</label>
+</div>
+<div x-id="['form2-input']" class=float-field>
+<input :id="$id('form2-input')" class=field type=email name=Email placeholder=Email required />
+<label :for="$id('form2-input')">Email</label>
+</div>
+<div x-id="['form2-input']" class=float-field>
+<input :id="$id('form2-input')" class=field type=text placeholder="Brand name" name="Brand name" required />
+<label :for="$id('form2-input')">Brand name</label>
+</div>
+<div x-id="['form2-input']" class=float-field>
+<input :id="$id('form2-input')" class=field type=text placeholder="Brand description" name="Brand description" required />
+<label :for="$id('form2-input')">Brand description</label>
+</div>
+<div x-id="['form2-input']" class="float-field col-span-full">
+<textarea :id="$id('form2-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Target audience" name="Describe your target audience" rows=1></textarea>
+<label :for="$id('form2-input')">Describe your target audience</label>
+</div>
+<div x-id="['form2-input']" class="float-field col-span-full">
+<textarea :id="$id('form2-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Any extra preferences?" name="Any extra preferences that we should consider?" rows=1></textarea>
+<label :for="$id('form2-input')">Any extra preferences that we should consider?</label>
+</div>
+<div class="p2 col-span-full">
+<input type=file name=files multiple>
+</div>
+</div>
+<div class="mt-40px flex flex-col gap-16px border border-black p-14px dark:border-white">
+<p class=p2>Animation in .mp4 format and .png sequence</p>
+<p class=p1>
+Total:
+<span>995</span>
+EUR &nbsp;&nbsp;//&nbsp;&nbsp;
+<br class=md:hidden />
+<span>7</span>
+working days
+</p>
+<input type=hidden name=Total value=995 />
+<input type=hidden name=Days value=7 />
+</div>
+<div x-show=formSubmitted class=my-40px>
+<p class=p1>Your application has been sent!</p>
+<p class="p2 mt-24px">Wait for an email with instructions.</p>
+</div> <button x-show="!formSubmitted" class="btn my-40px w-full" type=submit>Send request</button>
+</form>
+</div>
+<div class="hidden lg:col-span-1 lg:block">
+<button @click="$refs.form2.reset()" x-show="showReset && selected === 2" x-cloak class="p2 sticky top-0 flex w-full items-center justify-center gap-16px py-[28px]" type=button>
+Reset
+<svg class="h-24px w-24px fill-current" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#close"></use>
+</svg>
+</button>
+</div>
+</div>
+<div x-data="{ formSubmitted: false, showReset: false }" @reset="showReset = false" class="gap-20px transition-opacity lg:grid lg:grid-cols-5" :class="(selected !== null && selected !== 3) && 'opacity-40'">
+<div class="border-t border-black dark:border-white lg:col-span-4">
+<button @click="if(selected !== 3) { selected = 3; scrollToSection($el, 0.3) } else { selected = null }" class="flex w-full scroll-mt-[126px] items-center justify-between gap-8px py-16px lg:scroll-mt-0" type=button>
+<span class="p1 text-left">3D illustration</span>
+<span class="p2 whitespace-nowrap text-right">
+595 EUR &nbsp;&nbsp;//
+<br class=md:hidden />
+&nbsp;&nbsp; 5 working days
+</span>
+</button>
+<form class=form @change="showReset = true" x-ref=form3 x-show="selected === 3" autocomplete=off x-cloak x-collapse>
+<input name=_session_key type=hidden value=Xe7fk4OjJfmKOtjpl87kYXnIZCNDWT9q8aytIAse>
+<input name=_token type=hidden value=Il1wIwrnVXfGwY7iKVMTfMNMmyNZln2lAA3j6JvM>
+<input type=hidden name=Category value="3D illustration"/>
+<div x-show="!formSubmitted" class="mt-24px grid grid-cols-1 gap-x-20px gap-y-24px lg:grid-cols-2">
+<div x-id="['form3-input']" class=float-field>
+<input :id="$id('form3-input')" class=field type=text name=Name placeholder=Name required />
+<label :for="$id('form3-input')">Name</label>
+</div>
+<div x-id="['form3-input']" class=float-field>
+<input :id="$id('form3-input')" class=field type=email name=Email placeholder=Email required />
+<label :for="$id('form3-input')">Email</label>
+</div>
+<div x-id="['form3-input']" class=float-field>
+<input :id="$id('form3-input')" class=field type=text placeholder="Brand name" name="Brand name" required />
+<label :for="$id('form3-input')">Brand name</label>
+</div>
+<div x-id="['form3-input']" class=float-field>
+<input :id="$id('form3-input')" class=field type=text placeholder="Brand description" name="Brand description" required />
+<label :for="$id('form3-input')">Brand description</label>
+</div>
+<div x-id="['form3-input']" class="float-field col-span-full">
+<textarea :id="$id('form3-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Target audience" name="Describe your target audience"></textarea>
+<label :for="$id('form3-input')">Describe your target audience</label>
+</div>
+<div x-id="['form3-input']" class="float-field col-span-full">
+<textarea :id="$id('form3-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="How and where use 3D model?" name="How and where do you want to use the final 3D model?" rows=1></textarea>
+<label :for="$id('form3-input')">
+How and where do you want to use the final 3D model? (e.g. on the website or in SMM)
+</label>
+</div>
+<div x-id="['form3-input']" class="float-field col-span-full">
+<textarea :id="$id('form3-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Do you have any design assets" name="Do you have any design assets" rows=1></textarea>
+<label :for="$id('form3-input')">
+Do you have any design assets, photos or guidelines that will help us to learn more
+about your brand and product?
+</label>
+</div>
+<div class="p2 col-span-full">
+<input type=file name=files multiple>
+</div>
+<div x-id="['form3-input']" class="float-field col-span-full">
+<textarea :id="$id('form3-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Any extra preferences?" name="Any extra preferences that we should consider?" rows=1></textarea>
+<label :for="$id('form3-input')">Any extra preferences that we should consider?</label>
+</div>
+<div class="p2 col-span-full">
+<input type=file name=files multiple>
+</div>
+</div>
+<div class="mt-40px flex flex-col gap-16px border border-black p-14px dark:border-white">
+<p class=p2>3D model in .obj and .glb/.gltf format or image .png, .jpg</p>
+<p class=p1>
+Total:
+<span>595</span>
+EUR &nbsp;&nbsp;//&nbsp;&nbsp;
+<br class=md:hidden />
+<span>5</span>
+working days
+</p>
+<input type=hidden name=Total value=595 />
+<input type=hidden name=Days value=5 />
+</div>
+<div x-show=formSubmitted class=my-40px>
+<p class=p1>Your application has been sent!</p>
+<p class="p2 mt-24px">Wait for an email with instructions.</p>
+</div> <button x-show="!formSubmitted" class="btn my-40px w-full" type=submit>Send request</button>
+</form>
+</div>
+<div class="hidden lg:col-span-1 lg:block">
+<button @click="$refs.form3.reset()" x-show="showReset && selected === 3" x-cloak class="p2 sticky top-0 flex w-full items-center justify-center gap-16px py-[28px]" type=button>
+Reset
+<svg class="h-24px w-24px fill-current" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#close"></use>
+</svg>
+</button>
+</div>
+</div>
+<div x-data="{ formSubmitted: false, showReset: false, price: 1195, days: 8, receiveCore: false }" @reset="showReset = false; price = 1195; days = 8; receiveCore = false" class="gap-20px transition-opacity lg:grid lg:grid-cols-5" :class="(selected !== null && selected !== 4) && 'opacity-40'">
+<div :class="selected === 4 && 'border-b-0'" class="border-y border-black dark:border-white lg:col-span-4">
+<button @click="if(selected !== 4) { selected = 4; scrollToSection($el, 0.3) } else { selected = null }" class="flex w-full scroll-mt-[126px] items-center justify-between gap-8px py-16px lg:scroll-mt-0" type=button>
+<span class="p1 text-left">Landing page</span>
+<span class="p2 whitespace-nowrap text-right">
+1195 EUR &nbsp;&nbsp;//
+<br class=md:hidden />
+&nbsp;&nbsp; 8 working days
+</span>
+</button>
+<form class=form @change="showReset = true" x-ref=form4 x-show="selected === 4" autocomplete=off x-cloak x-collapse>
+<input name=_session_key type=hidden value=Xe7fk4OjJfmKOtjpl87kYXnIZCNDWT9q8aytIAse>
+<input name=_token type=hidden value=Il1wIwrnVXfGwY7iKVMTfMNMmyNZln2lAA3j6JvM>
+<input type=hidden name=Category value="Landing page"/>
+<div x-show="!formSubmitted" class="mt-24px grid grid-cols-1 gap-x-20px gap-y-24px lg:grid-cols-2">
+<div x-id="['form4-input']" class=float-field>
+<input :id="$id('form4-input')" class=field type=text name=Name placeholder=Name required />
+<label :for="$id('form4-input')">Name</label>
+</div>
+<div x-id="['form4-input']" class=float-field>
+<input :id="$id('form4-input')" class=field type=email name=Email placeholder=Email required />
+<label :for="$id('form4-input')">Email</label>
+</div>
+<div x-id="['form4-input']" class=float-field>
+<input :id="$id('form4-input')" class=field type=text placeholder="Brand name" name="Brand name" required />
+<label :for="$id('form4-input')">Brand name</label>
+</div>
+<div x-id="['form4-input']" class=float-field>
+<input :id="$id('form4-input')" class=field type=text placeholder="Brand description" name="Brand description" required />
+<label :for="$id('form4-input')">Brand description</label>
+</div>
+<div x-id="['form4-input']" class="float-field col-span-full">
+<textarea :id="$id('form4-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Target audience" name="Describe your target audience" rows=1></textarea>
+<label :for="$id('form4-input')">Describe your target audience</label>
+</div>
+<div x-id="['form4-input']" class="float-field col-span-full">
+<textarea :id="$id('form4-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Who will be using this site?" name="Who will be using this site?" rows=1></textarea>
+<label :for="$id('form4-input')">Who will be using this site? What for?</label>
+</div>
+<div x-id="['form4-input']" class="float-field col-span-full">
+<textarea :id="$id('form4-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="What does it need to do?" name="What does it need to do?" rows=1></textarea>
+<label :for="$id('form4-input')">
+What does it need to do? Describe the primary and secondary actions of the website
+</label>
+</div>
+<div x-id="['form4-input']" class="float-field col-span-full">
+<textarea :id="$id('form4-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Do you have any website currently?" name="Do you have any website currently?" rows=1></textarea>
+<label :for="$id('form4-input')">Do you have any website currently?</label>
+</div>
+<div x-id="['form4-input']" class="float-field col-span-full">
+<textarea :id="$id('form4-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Brandbook or brand guides?" name="Do you have a brandbook or brand guides?" rows=1></textarea>
+<label :for="$id('form4-input')">Do you have a brandbook or brand guides?</label>
+</div>
+<div class="p2 col-span-full">
+<input type=file name=files multiple>
+</div>
+<div x-id="['form4-input']" class="float-field col-span-full">
+<textarea :id="$id('form4-input')" x-init="$watch('selected', () => autoResizeTextarea($el))" class="field field-resize" placeholder="Any extra preferences?" name="Any extra preferences that we should consider?" rows=1></textarea>
+<label :for="$id('form4-input')">Any extra preferences that we should consider?</label>
+</div>
+<div class="p2 col-span-full">
+<input type=file name=files multiple>
+</div>
+</div>
+<div x-show="!formSubmitted" class="mt-40px flex flex-col gap-24px">
+<div x-id="['form4-input']" class="flex gap-20px">
+<input :id="$id('form4-input')" x-model=receiveCore @change="price += ($event.target.checked) ? +795 : -795; days += ($event.target.checked) ? +6 : -6; receive = ($event.target.checked) ? 'You will receive: Design of 3-5 website pages in Figma and code archive (html, css, js files)' : 'You will receive: Website in Figma link + code archive'" name="Upgrade to Core Website" type=checkbox value=yes />
+<label :for="$id('form4-input')">
+Upgrade to Core Website (+795 EUR // +6 days)
+<span class="mt-8px block">Design of a full-fledged website, 3-5 pages</span>
+</label>
+</div>
+</div>
+<div class="mt-40px flex flex-col gap-16px border border-black p-14px dark:border-white">
+<p class=p2>
+You will receive:
+<span x-show="!receiveCore">Design of a single page</span>
+<span x-show=receiveCore x-cloak>Design of 3-5 website pages</span>
+in Figma and code archive (html, css, js files)
+</p>
+<p class=p1>
+Total:
+<span x-text=price>1195</span>
+EUR &nbsp;&nbsp;//&nbsp;&nbsp;
+<br class=md:hidden />
+<span x-text=days>8</span>
+working days
+</p>
+<input type=hidden name=Total :value=price />
+<input type=hidden name=Days :value=days />
+</div>
+<div x-show=formSubmitted class=my-40px>
+<p class=p1>Your application has been sent!</p>
+<p class="p2 mt-24px">Wait for an email with instructions.</p>
+</div> <button x-show="!formSubmitted" class="btn mt-40px w-full" type=submit>Send request</button>
+</form>
+</div>
+<div class="hidden lg:col-span-1 lg:block">
+<button @click="$refs.form4.reset()" x-show="showReset && selected === 4" x-cloak class="p2 sticky top-0 flex w-full items-center justify-center gap-16px py-[28px]" type=button>
+Reset
+<svg class="h-24px w-24px fill-current" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#close"></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="px-10px md:px-20px">
+<div class="p2 grid grid-cols-6 border-t border-black dark:border-white">
+<div class="col-span-3 py-14px px-16px md:col-span-2 lg:col-span-1">Georgia, Tbilisi</div>
+<div class="col-span-3 flex flex-col items-start gap-12px border-l border-black py-14px px-16px dark:border-white md:col-span-2 md:gap-2px lg:col-span-1">
+<a href="mailto:info@klad.design" class=afterline>info@klad.design</a>
+<a href=tel:995-591-017-066 class=afterline>+995 591 017 066</a>
+</div>
+<div class="col-span-full flex items-center gap-8px border-t border-black px-8px py-14px dark:border-white md:col-span-2 md:border-t-0 md:border-l lg:col-span-1">
+<a href="https://www.instagram.com/klad_syndicate/" class="transition hover:scale-x-75" aria-label="Our Instagram">
+<svg class="h-40px w-40px fill-current" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#instagram"></use>
+</svg>
+</a>
+<a href="https://www.behance.net/klad_design" class="transition hover:scale-x-75" aria-label="Our Behance">
+<svg class="h-40px w-40px fill-current" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#behance"></use>
+</svg>
+</a>
+<a href="https://dribbble.com/klad-design" class="transition hover:scale-x-75" aria-label="Our Dibbble">
+<svg class="h-40px w-40px fill-current" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#dribbble"></use>
+</svg>
+</a>
+<a href="https://www.linkedin.com/company/klad/" class="transition hover:scale-x-75" aria-label="Our Linkedin">
+<svg class="h-40px w-40px fill-current" aria-hidden=true>
+<use xlink:href="https://klad.design/themes/klad/assets/img/sprite.svg#linkedin"></use>
+</svg>
+</a>
+</div>
+<div class="col-span-full flex flex-col items-start gap-4px border-t border-black py-14px px-16px dark:border-white md:col-span-2 lg:col-span-1 lg:border-t-0 lg:border-l">
+<a href="https://klad.design/privacy" class=afterline>Privacy policy</a>
+</div>
+<div class="col-span-full border-t border-black py-14px px-16px dark:border-white md:col-span-4 md:border-l lg:col-span-2 lg:border-t-0">
+<p>© Klad. Creative design syndicate.<br>All Rights Reserved.</p>
+</div>
+</div>
+</footer></div>
+<script type="text/javascript" data-pagespeed-no-defer>pagespeed.lazyLoadImages.overrideAttributeFunctions();</script><script src="https://klad.design/themes/klad/assets/js/main.min.js"></script>
+<script src="https://klad.design/themes/klad/assets/js/vendor.min.js"></script>
+<script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"></script>
+<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
+<script>
+        const fileInputs = document.querySelectorAll("input[type=file]");
+
+        FilePond.registerPlugin(FilePondPluginFileValidateSize);
+
+        [...fileInputs].map(el => {
+            const pond = FilePond.create(el, {
+                onaddfilestart: (file) => { isLoadingCheck(); },
+                onprocessfile: (files) => { isLoadingCheck(); },
+                onremovefile: (files) => { isLoadingCheck(); },
+                onupdatefiles: (files) => { isLoadingCheck(); },
+                allowFileSizeValidation: true,
+                maxFileSize: 'KB',
+                credits: false,
+                labelFileProcessingComplete: 'Done!',
+                iconRemove: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.793.793a1 1 0 0 1 1.414 0L12 10.586 21.793.793a1 1 0 1 1 1.414 1.414L13.414 12l9.793 9.793a1 1 0 0 1-1.414 1.414L12 13.414l-9.793 9.793a1 1 0 0 1-1.414-1.414L10.586 12 .793 2.207a1 1 0 0 1 0-1.414Z" fill="currentColor"/></svg>',
+                iconProcess: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m10 14.586-3.293-3.293-1.414 1.414L10 17.414l9.707-9.707-1.414-1.414L10 14.586Z" fill="currentColor"/></svg>'
+            });
+
+            pond.setOptions({
+                name: 'files[]',
+                server: {
+                    url: '/martin/forms',
+                    process: '/process',
+                    revert: '/process',
+                    headers: {
+                        'X-CSRF-TOKEN': '<input name="_token" type="hidden" value="Il1wIwrnVXfGwY7iKVMTfMNMmyNZln2lAA3j6JvM">',
+                        'FILEPOND-FIELD': pond.name
+                    }
+                }
+            });
+
+            function isLoadingCheck() {
+                const isLoading = pond.getFiles().filter(x => x.status !== 5).length !== 0;
+
+                if (isLoading) {
+                    pond.element.closest('form').querySelector('[type="submit"]').setAttribute("disabled", "disabled");
+                } else {
+                    pond.element.closest('form').querySelector('[type="submit"]').removeAttribute("disabled");
+                }
+            }
+        });
+    </script>
+<script src="https://klad.design/themes/klad/assets/js/canvas.min.js"></script>
+</body>
+</html>
